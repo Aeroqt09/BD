@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+  <meta charset="UTF-8" />
+  <title>မွေးနေ့ပျော်ရွှင်ပါစေ 💖</title>
+  <style>
+    /* Reset */
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: Pyidaungsu, Arial, sans-serif;
+    }
+
+    /* Background Video */
+    #bg-video {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    /* Fade-in animation */
+    @keyframes fadein {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Card */
+    .card {
+      background-color: rgba(255, 255, 255, 0.85); /* အဖြူနဲ့ အလင်းတင်း */
+      border: 2px solid white; /* ဘောင် အဖြူ */
+      border-radius: 20px;
+      padding: 40px;
+      max-width: 500px;
+      text-align: center;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+      animation: fadein 2s ease;
+      margin: auto;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    h1 {
+      color: black; /* အမဲ */
+      font-size: 36px;
+      margin-bottom: 20px;
+      text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+    }
+
+    p {
+      font-size: 20px;
+      color: black; /* အမဲ */
+      margin: 10px 0;
+      background-color: rgba(255, 255, 255, 0.6);
+      padding: 10px 20px;
+      border-radius: 10px;
+      display: inline-block;
+    }
+
+    .heart {
+      font-size: 40px;
+      animation: beat 1s infinite;
+      margin-top: 20px;
+    }
+
+    @keyframes beat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Background Video -->
+  <video autoplay muted loop id="bg-video">
+    <source src="video/happy.mp4" type="video/mp4">
+  </video>
+
+  <!-- Card Content -->
+  <div class="card">
+    <h1>HPBD ပါချစ်ရတဲ့ကလေးလေးရေ🎉</h1>
+    <p>ဒီနှစ်မွေးနေ့ကနေစပြီးနောင်လာမယ့်မွေးနေ့တွေတိုင်းပျော်ရွှင်စရာအခိုက်အတန့်တွေနဲ့ကြုံတွေ့နိုင်ပါစေဗျာ</p>
+    <p>ချစ်ရတဲ့သူတွေနဲ့လည်း အမြဲတမ်း ဆုံစည်းနိုင်ပါစေ</p>
+    <p>အမြဲတမ်းပျော်ပျော်ရွှင်ရွှင်နေထိုင်သွားပါ </p>
+    <p>ဝမ်းနည်းစရာတွေသိပ်မတွေးပဲ မောင်မောင့်အကြောင်းပဲတွေးပြီးပိုပြုံးပါနော်</p>
+    <p>ဆုတောင်းကတော့ နည်းနည်းတိုသွားပေမယ့် အများကြီးချစ်ပါတယ်ဗျ 💖</p>
+    <p>မောင်မောင့်ကိုလည်း အများကြီးချစ်‌ပေးနိုင်ပါစေဗျာ 🥺🫰</p>
+    <div class="heart">💗</div>
+  </div>
+
+</body>
+</html>
